@@ -1,4 +1,4 @@
-import tshirtModel from "../models/tshirtModel";
+const tshirtModel = require ("../Models/tshirtsmodel");
 
 module.exports.list = function list(request, response) {
   tshirtModel.find({}).exec()
